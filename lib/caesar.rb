@@ -1,5 +1,3 @@
-string = 'What a string!'
-
 def caesar_cipher(string, shift)
   ascii_array = string_to_ascii(string)
   shifted_ascii_array = shift_ascii(ascii_array, shift)
@@ -33,5 +31,3 @@ end
 def ascii_to_char(ascii_array)
   ascii_array.map { |ascii| ascii.chr }
 end
-
-p caesar_cipher(string, 5)
